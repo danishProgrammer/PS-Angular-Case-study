@@ -1,0 +1,29 @@
+
+aside{
+    display: flex;
+    justify-content:center;
+    // margin: auto;
+    // width: 80vw;
+    section{
+        margin: 0.6rem;
+        padding: 1rem;
+        border: 3px solid black;
+        span{
+            // border: 3px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            -webkit-animation: moving 1s infinite;
+            animation: moving 1s infinite;
+        }
+        @-webkit-keyframes moving {
+            from {left: 100px;}
+            to {right: 300px;}
+        }
+        
+        @keyframes moving {
+            from {left: 100px;}
+            to {right: 300px;}
+        }
+    }
+}
