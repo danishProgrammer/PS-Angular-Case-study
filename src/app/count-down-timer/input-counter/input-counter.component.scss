@@ -1,0 +1,22 @@
+.input-counter-wrapper{
+    padding: 1rem;
+    .form-control{
+        vertical-align: super;
+        label{
+            font-weight: 500;
+        }
+        input{
+            border: 3px solid black;
+            margin-left: 2px;
+            padding: 0.25rem;
+        }
+    }
+    .buttons{
+        padding-top: 0.25rem;
+    }
+    // .error{
+    //     font-size: small;
+    //     color: red;
+    //     padding-top: 0.25rem;
+    // }
+}

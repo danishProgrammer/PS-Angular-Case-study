@@ -1,1 +1,10 @@
-<p>count-down-timer works!</p>
+<aside class="border">
+    <section>
+        <app-display-counter [timer]="displayCounter"  class="col border"></app-display-counter>
+        <app-input-counter (timerInfo)="getTimerInfo($event)" (counter)="displayCounter = $event" class="col border"></app-input-counter>
+    </section>
+    <section>
+        <app-counter-timestamp [timestampInfo]="timestampInfo" class="col"></app-counter-timestamp>
+        <app-counter-clicks [counterClicks]="counterClicks" class="col"></app-counter-clicks>
+    </section>
+</aside>

@@ -8,6 +8,10 @@ import { FloatingListComponent } from './floating-list/floating-list.component';
 import { PlaceholderDirective } from 'src/shared/placeholder.directive';
 import { CategoryListComponent } from './category-list/category-list.component';
 import { CountDownTimerComponent } from './count-down-timer/count-down-timer.component';
+import { DisplayCounterComponent } from './count-down-timer/display-counter/display-counter.component';
+import { InputCounterComponent } from './count-down-timer/input-counter/input-counter.component';
+import { CounterTimestampComponent } from './count-down-timer/counter-timestamp/counter-timestamp.component';
+import { CounterClicksComponent } from './count-down-timer/counter-clicks/counter-clicks.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { CountDownTimerComponent } from './count-down-timer/count-down-timer.com
     FloatingListComponent,
     PlaceholderDirective,
     CategoryListComponent,
-    CountDownTimerComponent
+    CountDownTimerComponent,
+    DisplayCounterComponent,
+    InputCounterComponent,
+    CounterTimestampComponent,
+    CounterClicksComponent
   ],
   imports: [
     BrowserModule,

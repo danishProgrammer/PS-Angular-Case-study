@@ -1,0 +1,26 @@
+<div class="input-counter-wrapper">
+    <table>
+        <tr class="form-control">
+            <td>
+                <label for="timer">Enter Timer Limit</label>
+            </td>
+            <td>
+                <input type="number" name="timer" [disabled]="timerInProgress" [(ngModel)]="timer" >
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="buttons">
+                <button *ngIf="!timerInProgress" (click)="startTimer()">Start</button>
+                <button *ngIf="timerInProgress" (click)="pauseTimer()">Pause</button>
+                <button (click)="resetTimer()">reset</button>
+            </td>
+        </tr>
+        <tr *ngFor="let pause of timerPauseList">
+            <td>
+                paused at {{pause}}
+            </td>
+        </tr>
+    </table>
+
+</div>
