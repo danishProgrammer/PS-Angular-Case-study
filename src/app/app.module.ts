@@ -12,6 +12,8 @@ import { DisplayCounterComponent } from './count-down-timer/display-counter/disp
 import { InputCounterComponent } from './count-down-timer/input-counter/input-counter.component';
 import { CounterTimestampComponent } from './count-down-timer/counter-timestamp/counter-timestamp.component';
 import { CounterClicksComponent } from './count-down-timer/counter-clicks/counter-clicks.component';
+import { CategoryComponent } from './category-list/category/category.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { CounterClicksComponent } from './count-down-timer/counter-clicks/counte
     DisplayCounterComponent,
     InputCounterComponent,
     CounterTimestampComponent,
-    CounterClicksComponent
+    CounterClicksComponent,
+    CategoryComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
