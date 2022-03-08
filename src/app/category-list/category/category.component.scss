@@ -1,0 +1,41 @@
+.category-card{
+    border-radius: 25px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 20vw; // set 40vw incase of list view.
+    border: 2px solid black;
+    &-header{
+        display: flex;
+        margin: 0.6rem 0;
+        justify-content: space-between;
+        h4,.category{
+            margin: 0;
+        }
+        .category{
+            font-size: small;
+            font-weight: 400;
+            margin-top: 0.31rem;
+        }
+        span{
+            font-weight: 500;
+        }
+    }
+    &-description{
+        display: flex;
+        justify-content: space-between;
+       p{
+        font-size: medium;
+        font-weight: 500;
+        }
+        img{
+            margin: 1rem;
+            width: 6.25rem;
+            height: 6.25rem;
+        }
+    }
+
+    .splitline{
+        margin: 0.37rem 0;
+        border: 1px solid lightgrey;
+    }
+}

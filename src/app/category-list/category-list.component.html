@@ -1,1 +1,18 @@
-<p>category-list works!</p>
+<aside>
+    <header>
+        <div class="views">
+        </div>
+        <div class="filters">
+            <select name="categoryFilters" id="">
+                <option value=""></option>
+            </select>
+            <select name="priceFilters" id="">
+                <option value=""></option>
+            </select>
+        </div>
+       
+    </header>
+   <section>
+       <app-category  *ngFor="let category of categories"></app-category>
+   </section>
+</aside>

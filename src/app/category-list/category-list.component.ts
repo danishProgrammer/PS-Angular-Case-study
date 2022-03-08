@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Category } from 'src/shared/app.types';
 
 @Component({
   selector: 'app-category-list',
@@ -11,5 +12,7 @@ export class CategoryListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  public categories:Category[] = Array(40).fill(40);
 
 }
