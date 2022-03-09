@@ -5,34 +5,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FloatingListComponent } from './floating-list/floating-list.component';
-import { PlaceholderDirective } from 'src/shared/placeholder.directive';
-import { CategoryListComponent } from './category-list/category-list.component';
-import { CountDownTimerComponent } from './count-down-timer/count-down-timer.component';
-import { DisplayCounterComponent } from './count-down-timer/display-counter/display-counter.component';
-import { InputCounterComponent } from './count-down-timer/input-counter/input-counter.component';
-import { CounterTimestampComponent } from './count-down-timer/counter-timestamp/counter-timestamp.component';
-import { CounterClicksComponent } from './count-down-timer/counter-clicks/counter-clicks.component';
-import { CategoryComponent } from './category-list/category/category.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CategoryListModule } from './category-list/category-list.module';
+import { CountDownTimerModule } from './count-down-timer/count-down-timer.module';
+import { FloatingListModule } from './floating-list/floating-list.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FloatingListComponent,
-    PlaceholderDirective,
-    CategoryListComponent,
-    CountDownTimerComponent,
-    DisplayCounterComponent,
-    InputCounterComponent,
-    CounterTimestampComponent,
-    CounterClicksComponent,
-    CategoryComponent,
     NavbarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
