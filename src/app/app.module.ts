@@ -4,16 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FloatingListComponent } from './floating-list/floating-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { CategoryListModule } from './category-list/category-list.module';
-import { CountDownTimerModule } from './count-down-timer/count-down-timer.module';
-import { FloatingListModule } from './floating-list/floating-list.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

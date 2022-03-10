@@ -17,12 +17,3 @@ export interface Category{
     type:string
 }
 
-// export enum CategoryTypes {
-//     ELECTRONICS = 'electronics',
-//     CLOTHING = 'clothing',
-//     FURNITURE = 'furniture',
-//     BEAUTY = 'beauty',
-//     SPORTS = 'sports',
-//     ALL = 'all'
-// }
-
