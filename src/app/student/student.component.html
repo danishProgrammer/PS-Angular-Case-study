@@ -1,0 +1,12 @@
+<aside>
+    <table>
+        <thead>
+            <th class="col" *ngFor="let header of StudentHeaders" (click)="sortStudentDetails(header)">{{header | titlecase}}</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of Students">
+               <td class="col" *ngFor="let details of studentDetails(student)"> {{details}} </td>
+            </tr>
+        </tbody>
+    </table>
+</aside>

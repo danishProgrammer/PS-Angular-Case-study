@@ -9,6 +9,7 @@ const routes: Routes = [
   {path:'countdown',loadChildren:() => import('./count-down-timer/count-down-timer.module').then(m => m.CountDownTimerModule)},
   {path:'floating',loadChildren:() => import('./floating-list/floating-list.module').then(m => m.FloatingListModule)},
   {path:'countdown-subject',loadChildren:() => import('./countdown-subjects/countdown-subjects.module').then(m => m.CountdownSubjectModule)},
+  {path:'student',loadChildren:() => import('./student/student.module').then(m => m.StudentModule)},
   {path:'**',component:HomeComponent,data:{message:'Path Not found'}}
 ];
 
