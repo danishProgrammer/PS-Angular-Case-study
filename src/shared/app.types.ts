@@ -14,7 +14,7 @@ export interface Category{
     description:string,
     price:number,
     img:string,
-    type:string
+    manufacturedBy:string
 }
 
 export interface Student{

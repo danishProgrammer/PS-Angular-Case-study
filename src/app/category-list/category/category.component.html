@@ -1,15 +1,15 @@
 <div class="category-card">
     <div class="category-card-header">
         <div>
-            <h4>Mobile Xt</h4>
-            <p class="category">Category: Electronics</p>
+            <h3 class="name">{{category.name | titlecase}}</h3>
+            <p class="type">Manufactured By: <em> {{category.manufacturedBy | uppercase}} </em></p>
         </div>
-        <span>Price: 505$</span>
+        <span>Price: {{category.price}} Rs</span>
     </div>
     <div class="splitline"></div>
     <div class="category-card-description">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus praesentium, perspiciatis in vero mollitia deleniti vitae delectus molestias, error officiis sint! A nihil sit dolor? Labore ullam natus inventore corporis.</p>
-        <img src="" alt="" srcset="">
+        <img [src]="category.img" [alt]="category.name">
+        <p> {{category.description}}</p>
     </div>
 
 </div>

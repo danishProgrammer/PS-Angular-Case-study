@@ -1,7 +1,11 @@
 aside{
     section{
         display: flex;
-        justify-content: space-around;
         flex-wrap: wrap;
+    }
+    .filters{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0.62rem;
     }
 }

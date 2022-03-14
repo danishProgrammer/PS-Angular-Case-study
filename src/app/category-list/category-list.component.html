@@ -3,16 +3,14 @@
         <div class="views">
         </div>
         <div class="filters">
-            <select name="categoryFilters" id="">
-                <option value=""></option>
-            </select>
-            <select name="priceFilters" id="">
-                <option value=""></option>
+            <select name="priceFilters" (change)="selectPrice($event)">
+                <option> Select Price</option>
+                <option [value]="price.value" *ngFor="let price of prices"> {{price.description}}</option>
             </select>
         </div>
        
     </header>
    <section>
-       <app-category  *ngFor="let category of categories"></app-category>
+       <app-category [category]="category"  *ngFor="let category of categories"></app-category>
    </section>
 </aside>
