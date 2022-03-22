@@ -1,0 +1,14 @@
+.content{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 1rem;
+    box-sizing: border-box;
+
+    button{
+        position: relative;
+        top: 6rem;
+        left: 4rem;
+        cursor: pointer;
+    }
+}

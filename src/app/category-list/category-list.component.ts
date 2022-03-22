@@ -10,6 +10,7 @@ export class CategoryListComponent implements OnInit {
 
   constructor() { }
   public prices:{value:number,description:string}[] = [];
+  public gridView:boolean = true;
 
   ngOnInit(): void {
     this.initCategories();
